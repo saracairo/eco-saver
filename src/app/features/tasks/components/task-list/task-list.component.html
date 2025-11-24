@@ -1,0 +1,12 @@
+<p>
+  <strong>Completate:</strong>
+  {{ completedCount() }} / {{ tasks().length }}
+</p>
+
+<div class="task-list">
+  <app-task-item
+    *ngFor="let task of tasks()"
+    [task]="task"
+    (toggle)="toggleTask(task.id)">
+  </app-task-item>
+</div>
