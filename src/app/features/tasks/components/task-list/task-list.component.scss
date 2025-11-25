@@ -2,6 +2,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+  align-items: stretch;
+  gap: 20px;
+  padding: 32px 24px;
+  // border: 4px solid var(--fluo-green);
+  border-radius: 60px 10px;
+  // box-shadow: 0 0 32px var(--fluo-green), 0 0 32px var(--fluo-pink);
+  color: var(--fluo-green);
+  margin: 40px auto;
+  max-width: 340px;
+  min-height: 350px;
+  font-family: 'VT323', 'Audiowide', 'Share Tech Mono', 'monospace';
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+
+}
+
+p {
+  font-family: 'VT323', 'Audiowide', 'Share Tech Mono', 'monospace';
+  font-size: 1.4rem;
+  color: var(--fluo-green);
+  padding: 8px 16px;
+  // border: 1px solid var(--fluo-pink);
+  border-radius: 30px 5px;
+  box-shadow: 0 0 8px var(--fluo-pink);
+  text-align: center;
+  margin-bottom: 12px;
+
 }

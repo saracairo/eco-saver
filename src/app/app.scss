@@ -1,0 +1,36 @@
+
+body, app-root {
+	min-height: 100vh;
+	background: #181818;
+	color: #fff;
+	font-family: 'Orbitron', 'Arial', sans-serif;
+}
+
+
+.container {
+	
+}
+
+.app-title {
+	font-family: 'VT323', 'Share Tech Mono', monospace;
+	font-size: 2.2rem;
+	color: var(--fluo-green);
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+	text-shadow: 0 0 8px var(--fluo-green);
+}
+
+.app-footer {
+	font-family: 'VT323', 'Share Tech Mono', monospace;
+	color: var(--fluo-pink);
+	text-align: center;
+	margin-top: 24px;
+	font-size: 1.1rem;
+}
+
+.app-footer a {
+	color: var(--fluo-green);
+	text-decoration: underline;
+}
+

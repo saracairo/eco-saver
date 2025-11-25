@@ -1,0 +1,42 @@
+.task-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border: 1px solid var(--fluo-green);
+	box-shadow: 0 0 8px var(--fluo-green) inset;
+	color: var(--fluo-green);
+	padding: 16px 20px;
+	margin: 0;
+	border-radius: 5px;
+	font-family: 'VT323', 'Audiowide', 'Share Tech Mono', 'monospace';
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+	position: relative;
+}
+
+.task-item.completed {
+	background: var(--fluo-pink);
+	color: var(--dark-bg);
+	text-decoration: line-through;
+	border-color: var(--fluo-pink);
+	border-radius: 30px 5px;
+}
+
+input[type="checkbox"] {
+	accent-color: var(--fluo-green);
+	width: 32px;
+	height: 32px;
+	margin-right: 18px;
+	border-radius: 10px 2px;
+	border: 3px solid var(--fluo-pink);
+	box-shadow: 0 0 4px var(--fluo-pink);
+	background: var(--dark-bg);
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	transition: box-shadow .2s;
+}
+
+input[type="checkbox"]:checked {
+	box-shadow: 0 0 8px var(--fluo-green);
+}

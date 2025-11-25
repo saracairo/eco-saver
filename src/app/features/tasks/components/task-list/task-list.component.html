@@ -1,8 +1,13 @@
+<!--
+  Template della lista delle task.
+  Mostra il conteggio delle task completate e la lista delle task tramite il componente app-task-item.
+-->
 <p>
   <strong>Completate:</strong>
   {{ completedCount() }} / {{ tasks().length }}
 </p>
 
+<!-- Lista delle task -->
 <div class="task-list">
   <app-task-item
     *ngFor="let task of tasks()"
