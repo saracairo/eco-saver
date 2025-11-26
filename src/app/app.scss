@@ -10,10 +10,10 @@ body, app-root {
 }
 
 .container {
-	border: 2px solid var(--fluo-green);
-  border-radius: 100px 10px;
+	// border: 2px solid var(--fluo-green);
+  // border-radius: 100px 10px;
+  // box-shadow: 0 0 16px var(--fluo-green);
   padding: 24px 32px;
-  box-shadow: 0 0 16px var(--fluo-green);
   max-width: 600px;
   width: 90%;
 }

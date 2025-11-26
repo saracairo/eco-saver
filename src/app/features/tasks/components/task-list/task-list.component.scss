@@ -1,3 +1,18 @@
+/* Stile per il bottone di aggiunta task */
+.add-task-btn {
+  background-color: var(--fluo-pink);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+.add-task-btn:hover {
+  background-color: #388e3c;
+}
 .task-list {
   display: flex;
   flex-direction: column;
@@ -17,7 +32,6 @@
   letter-spacing: 2px;
   position: relative;
   z-index: 2;
-
 }
 
 p {
@@ -30,5 +44,4 @@ p {
   box-shadow: 0 0 8px var(--fluo-pink);
   text-align: center;
   margin-bottom: 12px;
-
 }

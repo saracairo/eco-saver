@@ -3,7 +3,6 @@
 // * Definisce la struttura dell'oggetto Task utilizzato nell'app.
 // ****************************************************************
 
-
 /**
  * Interfaccia che rappresenta una task.
  * @property id Identificativo univoco della task
