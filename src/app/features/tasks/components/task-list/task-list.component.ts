@@ -34,6 +34,7 @@ import { CommonModule } from '@angular/common';
 import { TaskItemComponent } from '../task-item/task-item.component';
 import { AddTaskModalComponent } from '../add-task-modal/add-task-modal.component';
 import { Task } from  '../../models/task';
+import { TaskService } from '../../services/task.service';
 
 // definizione del componente
 @Component({
@@ -49,7 +50,8 @@ export class TaskListComponent {
   // =======================
 
   /** Signal che contiene la lista delle task correnti. */
-  tasks = signal<Task[]>(this.loadInitialTasks());
+  // tasks = signal<Task[]>(this.loadInitialTasks()); // è ora sul service
+  tasks = this.taskService.tasks$;
 
   /** Signal per gestire l'apertura del modal di aggiunta task. */
   showAddModal = signal(false);
