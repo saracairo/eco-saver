@@ -1,11 +1,25 @@
-<div class="modal" *ngIf="open">
-  <div class="modal-content">
-    <h2>Aggiungi Task</h2>
-    <form (ngSubmit)="addTask()">
-      <input type="text" [(ngModel)]="taskTitle" name="title" placeholder="Titolo" required />
-      <textarea [(ngModel)]="taskDescription" name="description" placeholder="Descrizione"></textarea>
-      <button type="submit">Aggiungi</button>
-      <button type="button" (click)="closeModal()">Annulla</button>
-    </form>
+@if (open()) {
+  <div class="modal">
+    <div class="modal-content">
+      <h2>Aggiungi Task</h2>
+      <form (ngSubmit)="addTask()">
+        <input
+          type="text"
+          [ngModel]="taskTitle()"
+          (ngModelChange)="taskTitle.set($event)"
+          name="title"
+          placeholder="Titolo"
+          required
+        />
+        <textarea
+          [ngModel]="taskDescription()"
+          (ngModelChange)="taskDescription.set($event)"
+          name="description"
+          placeholder="Descrizione"
+        ></textarea>
+        <button type="submit">Aggiungi</button>
+        <button type="button" (click)="closeModal()">Annulla</button>
+      </form>
+    </div>
   </div>
-</div>
+}

@@ -2,13 +2,12 @@
 <!--
   Template del componente singola task.
   Mostra le informazioni della task e gestisce l'interazione.
-  Stile retro fluo: verde/rosa, forme squadrate.
 -->
 <div class="task-item" [class.completed]="task()?.completed">
   <input
     type="checkbox"
     [checked]="task()?.completed"
     (change)="toggle.emit()"
-    style="accent-color: var(--fluo-green); width: 24px; height: 24px; margin-right: 16px; border-radius: 0; border: 2px solid var(--fluo-pink);" />
+  />
   <span>{{ task()?.title }}</span>
 </div>

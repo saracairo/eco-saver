@@ -24,13 +24,9 @@ import { Task } from '../../models/task';
   styleUrls: ['./task-item.component.scss'],
 })
 export class TaskItemComponent {
-  /**
-   * Input: task da visualizzare e gestire
-   */
+  /** Input: task da visualizzare e gestire */
   task = input<Task>();
 
-  /**
-   * Output: evento per notificare il toggle dello stato della task
-   */
+  /** Output: evento per notificare il toggle dello stato della task */
   toggle = output<void>();
 }
